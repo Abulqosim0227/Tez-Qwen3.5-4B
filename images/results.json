@@ -1,0 +1,45 @@
+{
+ "tez17": {
+  "clear": 1248,
+  "unclear": 162,
+  "correct_alone": 92.87,
+  "correct_guard": 92.23,
+  "wrong_delivered": 4.56,
+  "delivered": 1206,
+  "asked_guard": 90.74,
+  "languages": {
+   "uz_latin": 92.24,
+   "uz_cyrillic": 93.63,
+   "ru": 94.51,
+   "en": 92.92,
+   "mixed": 89.77
+  }
+ },
+ "base4b": {
+  "clear": 1248,
+  "unclear": 162,
+  "correct_alone": 52.32,
+  "correct_guard": 46.63,
+  "wrong_delivered": 15.9,
+  "delivered": 692,
+  "asked_guard": 96.3,
+  "languages": {
+   "uz_latin": 43.47,
+   "uz_cyrillic": 50.32,
+   "ru": 58.97,
+   "en": 61.67,
+   "mixed": 59.09
+  }
+ },
+ "two_files": {
+  "requests": 40,
+  "clear": 36,
+  "unclear": 4,
+  "clear_outcomes": {
+   "correct answer": 30,
+   "failed": 2,
+   "held or asked": 4
+  },
+  "unclear_asked": 4
+ }
+}

@@ -1,0 +1,10 @@
+[
+  {"request": "Kredit xodimlari bo'yicha qoldiqlar yig'indisi",
+   "answer": {"steps": [{"tool": "group_and_total", "args": {"group_by": ["kredit_xodimi"], "value_column": "qoldiq_uzs", "agg": "sum"}}]}},
+  {"request": "Только ипотеки в долларах",
+   "answer": {"steps": [
+     {"tool": "filter", "args": {"column": "kredit_turi", "op": "=", "value": "Ipoteka"}},
+     {"tool": "filter", "args": {"column": "valyuta", "op": "=", "value": "USD"}}]}},
+  {"request": "Tahlil qil",
+   "answer": {"ask": "Qanday tahlil kerak: qaysi ko'rsatkich (qoldiq, kredit summasi, kechikish) va qaysi kesimda (filial, kredit turi, oy)?"}}
+]

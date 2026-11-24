@@ -1,0 +1,15 @@
+{
+  "type_names": {
+    "BIGINT": "integer",
+    "INTEGER": "integer",
+    "DOUBLE": "number",
+    "VARCHAR": "text",
+    "DATE": "date",
+    "TIME": "time",
+    "TIMESTAMP": "timestamp",
+    "BOOLEAN": "boolean"
+  },
+  "samples_per_column": 3,
+  "values_limit": 30,
+  "values_chars_limit": 600
+}

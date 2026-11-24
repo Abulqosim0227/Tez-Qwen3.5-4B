@@ -1,0 +1,8 @@
+{
+  "max_steps": 4,
+  "number_types": ["integer", "number"],
+  "result_note": "current result columns",
+  "totalled_note": "current result is already totalled per",
+  "apostrophe": "'",
+  "apostrophe_variants": ["`", "‘", "’", "ʻ", "ʼ"]
+}

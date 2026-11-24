@@ -1,0 +1,232 @@
+{
+  "name": "kreditlar",
+  "rows": 20000,
+  "columns": [
+    {
+      "name": "kredit_raqami",
+      "type": "integer",
+      "samples": [
+        500216,
+        500245,
+        500278
+      ]
+    },
+    {
+      "name": "berilgan_sana",
+      "type": "text",
+      "samples": [
+        "2024-11-28",
+        "02.04.2024",
+        "14.04.2024"
+      ]
+    },
+    {
+      "name": "filial",
+      "type": "text",
+      "values": [
+        "Тошкент",
+        "Namangan",
+        "Samarqand ",
+        "Samarqand",
+        "Бухоро",
+        "Toshkent",
+        "Qarshi",
+        "Andijon",
+        "Buxoro"
+      ]
+    },
+    {
+      "name": "viloyat",
+      "type": "text",
+      "values": [
+        "Toshkent sh.",
+        "Namangan",
+        "Samarqand",
+        "Andijon",
+        "Buxoro",
+        "Qashqadaryo"
+      ]
+    },
+    {
+      "name": "qarzdor_id",
+      "type": "integer",
+      "samples": [
+        700127,
+        700018,
+        700054
+      ]
+    },
+    {
+      "name": "qarzdor_ismi",
+      "type": "text",
+      "values": [
+        "Saidova Gulnora",
+        "Qodirov Sherzod",
+        "Petrova Anna",
+        "Nazarov Ulug'bek",
+        "Мирзаев Анвар",
+        "Toshpo'latova Nilufar",
+        "Ergashev Javohir"
+      ]
+    },
+    {
+      "name": "qarzdor_turi",
+      "type": "text",
+      "values": [
+        "Jismoniy",
+        "Yuridik",
+        "YaTT"
+      ]
+    },
+    {
+      "name": "kredit_turi",
+      "type": "text",
+      "values": [
+        "Iste'mol krediti",
+        "Ipoteka",
+        "Biznes krediti",
+        "Avtokredit",
+        "Mikroqarz",
+        "Ta'lim krediti"
+      ]
+    },
+    {
+      "name": "valyuta",
+      "type": "text",
+      "values": [
+        "UZS",
+        "USD"
+      ]
+    },
+    {
+      "name": "kredit_summasi",
+      "type": "text",
+      "samples": [
+        "102629561.14",
+        "103496146.63",
+        "113514080.17"
+      ]
+    },
+    {
+      "name": "kredit_summasi_uzs",
+      "type": "number",
+      "samples": [
+        100394283.58,
+        103019112.8,
+        108464715.32
+      ]
+    },
+    {
+      "name": "qoldiq_uzs",
+      "type": "number",
+      "samples": [
+        10147476.18,
+        101676464.68,
+        102727980.07
+      ]
+    },
+    {
+      "name": "foiz_stavkasi",
+      "type": "number",
+      "values": [
+        24.5,
+        23.0,
+        18.5,
+        27.0,
+        21.0
+      ]
+    },
+    {
+      "name": "muddat_oy",
+      "type": "integer",
+      "values": [
+        36,
+        180,
+        6,
+        60,
+        120,
+        12,
+        24
+      ]
+    },
+    {
+      "name": "oylik_tolov_uzs",
+      "type": "number",
+      "samples": [
+        10021695.16,
+        10049266.67,
+        10103403.49
+      ]
+    },
+    {
+      "name": "kechikish_kuni",
+      "type": "integer",
+      "values": [
+        0,
+        45,
+        200,
+        3,
+        17,
+        95
+      ]
+    },
+    {
+      "name": "holat",
+      "type": "text",
+      "values": [
+        "Faol",
+        "Yopilgan",
+        "Muddati o'tgan",
+        "Sudda"
+      ]
+    },
+    {
+      "name": "garov_turi",
+      "type": "text",
+      "values": [
+        "Ko'chmas mulk",
+        "Avtomobil",
+        "Oltin",
+        "Kafillik"
+      ]
+    },
+    {
+      "name": "garov_qiymati_uzs",
+      "type": "number",
+      "samples": [
+        1004148366.38,
+        1009015606.82,
+        1009246411.95
+      ]
+    },
+    {
+      "name": "kredit_xodimi",
+      "type": "text",
+      "values": [
+        "Rasulov A.",
+        "Karimov D.",
+        "Hamidova M.",
+        "Yo'ldoshev B."
+      ]
+    },
+    {
+      "name": "oxirgi_tolov_sana",
+      "type": "text",
+      "samples": [
+        "2026-10-13",
+        "2025-06-13",
+        "2026-08-15"
+      ]
+    },
+    {
+      "name": "izoh",
+      "type": "text",
+      "values": [
+        "Qayta ko'rib chiqilgan",
+        "Реструктуризация",
+        "Muddatidan oldin yopildi",
+        "Restrukturizatsiya"
+      ]
+    }
+  ]
+}

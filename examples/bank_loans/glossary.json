@@ -1,0 +1,12 @@
+{
+  "kredit / кредит / qarz / loan": "one row of the table",
+  "kredit summasi / сумма кредита / miqdor": "loan amount, prefer column kredit_summasi_uzs for totals",
+  "qoldiq / остаток / balance": "outstanding balance, column qoldiq_uzs",
+  "qarzdor / mijoz / клиент / заемщик / borrower": "borrower, columns qarzdor_id and qarzdor_ismi",
+  "kechikish / просрочка / overdue": "column kechikish_kuni > 0, or holat = Muddati o'tgan",
+  "foiz / ставка / rate": "interest rate, column foiz_stavkasi",
+  "garov / залог / collateral": "columns garov_turi and garov_qiymati_uzs",
+  "yopilgan / закрытые / closed": "holat = Yopilgan",
+  "faol / активные / active": "holat = Faol",
+  "o'tgan oy / прошлый месяц": "previous calendar month"
+}

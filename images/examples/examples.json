@@ -1,0 +1,119 @@
+[
+ {
+  "language": "Uzbek (Latin)",
+  "request": "Filiallar bo'yicha jami savdo summasi",
+  "answer": {
+   "steps": [
+    {
+     "tool": "group_and_total",
+     "args": {
+      "group_by": [
+       "filial"
+      ],
+      "value_column": "summa",
+      "agg": "sum"
+     }
+    }
+   ]
+  },
+  "rows": 5,
+  "picture": "example_1.png"
+ },
+ {
+  "language": "Uzbek (Cyrillic)",
+  "request": "Энг кўп сотилган 3 та маҳсулотни кўрсат",
+  "answer": {
+   "steps": [
+    {
+     "tool": "top_n",
+     "args": {
+      "by": "soni",
+      "n": 3,
+      "descending": true,
+      "group": {
+       "columns": [
+        "mahsulot"
+       ],
+       "agg": "sum"
+      }
+     }
+    }
+   ]
+  },
+  "rows": 3,
+  "picture": "example_2.png"
+ },
+ {
+  "language": "Russian",
+  "request": "Покажи продажи в Самарканде на сумму больше 500 000",
+  "answer": {
+   "steps": [
+    {
+     "tool": "filter",
+     "args": {
+      "column": "filial",
+      "op": "=",
+      "value": "Samarqand"
+     }
+    },
+    {
+     "tool": "filter",
+     "args": {
+      "column": "summa",
+      "op": ">",
+      "value": 500000
+     }
+    }
+   ]
+  },
+  "rows": 18,
+  "picture": "example_3.png"
+ },
+ {
+  "language": "English",
+  "request": "Average price by product",
+  "answer": {
+   "steps": [
+    {
+     "tool": "group_and_total",
+     "args": {
+      "group_by": [
+       "mahsulot"
+      ],
+      "value_column": "narx",
+      "agg": "avg"
+     }
+    }
+   ]
+  },
+  "rows": 5,
+  "picture": "example_4.png"
+ },
+ {
+  "language": "Uzbek (Latin)",
+  "request": "Mahsulotlar bo'yicha savdo summasini diagramma qilib ko'rsat",
+  "answer": {
+   "steps": [
+    {
+     "tool": "make_chart",
+     "args": {
+      "chart": "bar",
+      "x": "mahsulot",
+      "y": "summa",
+      "agg": "sum"
+     }
+    }
+   ]
+  },
+  "rows": 5,
+  "picture": "example_5.png"
+ },
+ {
+  "language": "Uzbek (Latin)",
+  "request": "Tahlil qil",
+  "answer": {
+   "ask": "Qaysi ma'lumotlar bo'yicha tahlil qilishni xohlaysiz: 'Non' mahsulotlari, 'Sut' mahsulotlari yoki 'Yog'' mahsulotlari bo'yicha?"
+  },
+  "picture": "example_6.png"
+ }
+]
