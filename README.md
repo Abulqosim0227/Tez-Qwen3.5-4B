@@ -131,7 +131,7 @@ This is an internal development set, not an independent test.
 - **Follow-up requests:** they receive the benchmark's reference history, not the model's own earlier answers.
 - **No study with real users** exists yet.
 
-Run settings: llama.cpp b11946 on a CPU, grammar on, thinking off, greedy decoding. A plan counts as correct when DuckDB gives the same result table as the reference plan.
+Run settings: llama.cpp b11946 on a CPU, grammar on, thinking off, greedy decoding. Each model gave one answer per request, with no sampling or best-of-k. The three conditions (model alone, result checks, full guard) rescore that same saved answer; they are not three separate answers. A plan counts as correct when DuckDB gives the same result table as the reference plan.
 
 ![Benchmark overview](images/benchmark_overview.png)
 
@@ -205,7 +205,7 @@ All three pictures are drawn from the saved scored rows. Their numbers are in `i
 - **Repeated texts:** 29 training rows have the same text as 8 benchmark requests (tez17 answers all 8 right).
 - **Comparing two columns is weak.**
 - **One table at a time:** joins are done by the app before the model sees the table.
-- **`example.py` smoke test:** tested on 2026-11-24 with this file on a CPU, with three requests on the sample table (Uzbek, Russian and a vague one). It gave a grouped sum, a filter and a clarifying question. That is a smoke test, not an evaluation. The first request took 33 s while the prompt was read; the next ones took 3 to 4 s.
+- **`example.py` smoke test:** tested on 2026-11-24 with this file on a CPU, with three requests on the sample table (Uzbek, Russian and a vague one). It gave a grouped sum, a filter and a clarifying question. That is a smoke test, not an evaluation. The first request took 33 s and the next ones 3 to 4 s; startup, the first reading of the prompt and the later cached requests were not timed separately.
 
 ## Training
 
